@@ -10,7 +10,6 @@ router.get('/', function(req, res, next) {
 router.get('/social', function(req, res, next) {
   var daily = JSON.parse(fs.readFileSync("public/JSON/dailyRewards.json", 'utf8'));
   res.render('social', {data: daily});
-  
 });
 /* GET budget page. */
 router.get('/budget', function(req, res, next) {
